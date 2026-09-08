@@ -203,6 +203,11 @@ p {
   margin-bottom: 18px;
 }
 
+.highlight-text {
+  color: #d62828;
+  font-weight: 700;
+}
+
 .lead {
   max-width: 560px;
   font-size: 1.08rem;
