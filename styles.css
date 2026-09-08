@@ -123,8 +123,28 @@ p {
   box-shadow: 0 10px 20px rgba(75, 44, 32, 0.18);
 }
 
-.btn-primary:hover {
+.hero-actions .btn-primary:hover {
   background: var(--primary-deep);
+  animation: menu-shake 0.35s ease-in-out 1;
+}
+
+@keyframes menu-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-3px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(3px) rotate(1deg);
+  }
 }
 
 .btn-secondary {
